@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>SCD Documentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>SCD Documentation</h1>
+    <p>This document provides information about SCD (Slowly Changing Dimensions) in data warehousing.</p>
+    
+    <h2>What is SCD?</h2>
+    <p>Slowly Changing Dimensions (SCD) are dimensions that change slowly over time, rather than changing on a regular schedule, time-base. In data warehousing, it is important to manage and track these changes effectively.</p>
+    
+    <h2>Types of SCD</h2>
+    <ul>
+        <li><strong>Type 0:</strong> No changes are tracked. The original data remains unchanged.</li>
+        <li><strong>Type 1:</strong> Overwrite the old data with new data. No history is maintained.</li>
+        <li><strong>Type 2:</strong> Create a new record for each change, maintaining full history.</li>
+        <li><strong>Type 3:</strong> Add new columns to store previous values, allowing limited history tracking.</li>
+        <li><strong>Type 4:</strong> Use a separate history table to track changes.</li>
+        <li><strong>Type 6:</strong> A hybrid approach combining Type 1, Type 2, and Type 3 methods.</li>
+    </ul>
+    
+    <h2>Implementation Strategies</h2>
+    <p>Implementing SCD requires careful planning and consideration of the business requirements. Common strategies include using surrogate keys, effective date columns, and versioning techniques.</p>
+    
+    <h2>Conclusion</h2>
+    <p>SCDs are essential for maintaining accurate historical data in data warehouses. Choosing the right type of SCD depends on the specific needs of the organization and the nature of the data being managed.</p>
+</html>
